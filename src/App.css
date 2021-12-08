@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+h4 {
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.firstProducts {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  /* width: 10vw; */
+  height: 20vh;
+}
+.product-button {
+  max-width: 100%;
+}
+.category-image {
+  filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.2));
+}
+.category-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 30vh;
+}
+.product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* height: 30vh; */
+}
+.name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: right;
+  width: 100%;
+}
+.products-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* max-width: 80vw; */
+  height: fit-content;
+  flex-wrap: wrap;
+  max-width: 70vw;
+}
+.TopBar {
+  width: 100vw;
+  display: flex;
+  border-radius: 5%;
+  overflow: hidden;
+  margin-bottom: 10%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh; /* Position the navbar at the top of the page */
+}
+.main-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+.rooms-dropdown {
+  width: 20%;
+}
+.quantity-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* max-width: 80vw; */
+  height: fit-content;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+}
+.hello-text {
+  margin-bottom: 4%;
+  margin-top: 2%;
+}
+.modal-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.shadow {
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2007));
+}
+.cart-product {
+  border-bottom: 1px solid black;
+  width: 2rem;
+  height: 2rem;
+}

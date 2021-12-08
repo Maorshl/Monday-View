@@ -1,0 +1,68 @@
+{
+  "categories": ["Drinks", "Pastries", "Sandwiches"],
+  "drinks": [
+    {
+      "name": "Americano",
+      "options": [
+        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+      ],
+      "price": 10,
+      "image": "../assets/pictures/Drinks.png"
+    },
+    {
+      "name": "Latte",
+      "options": [
+        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+      ],
+      "price": 10,
+
+      "image": "../assets/pictures/Drinks.png"
+    },
+    {
+      "name": "Tea",
+      "options": [
+        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+      ],
+      "price": 8,
+      "image": "../assets/pictures/Drinks.png"
+    },
+    {
+      "name": "Small Cappuccino",
+      "options": [
+        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+      ],
+      "price": 10,
+      "image": "SmallHot"
+    },
+    {
+      "name": "Big Cappuccino",
+      "options": [
+        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+      ],
+      "price": 13,
+      "image": "BigHot"
+    }
+  ],
+  "pastries": [
+    {
+      "name": "croissant",
+      "options": [],
+      "price": 13,
+      "image": "../assets/pictures/Drinks.png"
+    },
+    {
+      "name": "Cinnamon roll",
+      "options": [],
+      "price": 13,
+      "image": "../assets/pictures/Drinks.png"
+    }
+  ],
+  "sandwiches": [
+    {
+      "name": "Tuna",
+      "options": [],
+      "price": 15,
+      "image": "../../"
+    }
+  ]
+}
