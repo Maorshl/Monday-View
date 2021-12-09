@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { toFinish } from "../../redux/appSlice";
 import CartProduct from "./CartProduct";
 import PhoneNumber from "./PhoneNumber";
+import Form from "./Form";
 
 function Checkout({ monday, meta }) {
   const dispatch = useDispatch();
@@ -54,37 +55,13 @@ function Checkout({ monday, meta }) {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <p>{orderSummery}</p>
-      <label>Location</label>
-      <Dropdown
-        className="rooms-dropdown"
-        size={Dropdown.size.MEDIUM}
-        options={[
-          { label: "Room#9" },
-          { label: "Room#7" },
-          { label: "Sella Ronda" },
-          { label: "Val Torens" },
-          { label: "Aspen" },
-        ]}
-        onChange={(event) => {
-          if (event) {
-            setLocation(event.label);
-          } else setLocation("");
-        }}
+      <Form
+        setLocation={setLocation}
+        setPhoneNumber={setPhoneNumber}
+        checkout={checkout}
+        location={location}
+        phoneNumber={phoneNumber}
       />
-      <div className="checkout-form">
-        <PhoneNumber setPhoneNumber={setPhoneNumber} />
-      </div>
-      <div className="checkout-button">
-        <div>Total: {cart.total}₪</div>
-        <Button
-          onClick={checkout}
-          disabled={
-            !(phoneNumber.length === 10 && location && cart.products.length)
-          }
-        >
-          Checkout
-        </Button>
-      </div>
     </div>
   );
 }

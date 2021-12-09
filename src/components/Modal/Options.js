@@ -21,12 +21,6 @@ function Options({ options, setExtra }) {
                     key={"subOption" + i}
                     text={subOption}
                     name={option.name}
-                    // onClick={() => {
-                    //   setExtra((prevState) => [
-                    //     ...prevState,
-                    //     { name: option.name, option: subOption },
-                    //   ]);
-                    // }}
                   />
                 </div>
               );
