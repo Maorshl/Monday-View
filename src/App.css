@@ -30,11 +30,11 @@ p {
   border-radius: 5%;
   /* width: 10vw; */
   height: 20vh;
+  cursor: pointer;
 }
-.product-button {
-  max-width: 100%;
-}
+
 .category-image {
+  cursor: pointer;
   filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.2));
 }
 .category-container {
@@ -119,4 +119,18 @@ p {
   border-bottom: 1px solid black;
   width: 2rem;
   height: 2rem;
+}
+.quantity-picker {
+  background: #dff0ff;
+  border-radius: 4px;
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: large;
+  color: #0085ff;
+}
+.plus-minus {
+  cursor: pointer;
 }

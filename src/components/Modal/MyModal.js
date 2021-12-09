@@ -24,7 +24,9 @@ function MyModal({ item, onHide, show, image }) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          {item.name}
+          <>
+            {item.name} <p>{item.price * quantity}₪</p>
+          </>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -50,8 +52,25 @@ function MyModal({ item, onHide, show, image }) {
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <p>{item.price * quantity}₪</p>
-        <Button onClick={onHide}>Close</Button>
+        <div className="quantity-picker">
+          <div
+            className="plus-minus"
+            onClick={() => setQuantity((prevState) => prevState + 1)}
+          >
+            +
+          </div>
+          <div>{quantity}</div>
+          <div
+            className="plus-minus"
+            onClick={() =>
+              setQuantity((prevState) =>
+                prevState !== 1 ? prevState - 1 : prevState
+              )
+            }
+          >
+            -
+          </div>
+        </div>
         <Button
           onClick={() => {
             dispatch(
@@ -65,23 +84,12 @@ function MyModal({ item, onHide, show, image }) {
             onHide();
           }}
         >
-          Add To Cart
+          Add To Cart{" "}
+          <img
+            src={require("../../assets/pictures/ArrowRight.png")}
+            style={{ height: "0.8rem", marginLeft: "0.8rem" }}
+          />
         </Button>
-        <div className="quantity-picker">
-          <Button onClick={() => setQuantity((prevState) => prevState + 1)}>
-            +
-          </Button>
-          <h4 style={{ padding: "1rem" }}>{quantity}</h4>
-          <Button
-            onClick={() =>
-              setQuantity((prevState) =>
-                prevState !== 1 ? prevState - 1 : prevState
-              )
-            }
-          >
-            -
-          </Button>
-        </div>
       </Modal.Footer>
     </Modal>
   );

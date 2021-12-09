@@ -57,7 +57,11 @@ function Main({ monday, meta }) {
       {activeSection === "pastries" && <Pastries />}
       {activeSection === "sandwiches" && <Sandwiches />}
       {activeSection === "checkout" && <Checkout monday={monday} meta={meta} />}
-      {activeSection === "finish" && <Finish monday={monday} meta={meta} />}
+      {activeSection === "finish" && <Finish />}
+      <img
+        src={require("../../assets/pictures/MoveoLogo.png")}
+        style={{ width: "20%", alignSelf: "center", margin: "5rem" }}
+      />
     </div>
   );
 }
