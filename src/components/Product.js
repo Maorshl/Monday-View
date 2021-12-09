@@ -6,19 +6,32 @@ import SmallHot from "../assets/pictures/Drinks.png";
 
 function Product({ item }) {
   const [modalShow, setModalShow] = React.useState(false);
-  const image = item.image === "BigHot" ? BigHot : SmallHot;
+  const image = require("../assets/pictures".concat(item.image));
   return (
     <>
       <div className="product-container">
-        <div className="product">
-          <img
+        {/* <div className="product"> */}
+        <div
+          className="product shadow"
+          onClick={() => setModalShow(true)}
+          style={{
+            backgroundImage: `url(${image})`,
+            width: "100%",
+            height: "10rem",
+            backgroundColor: "white",
+            backgroundSize: item.contain ? "contain" : "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center center",
+          }}
+        ></div>
+        {/* <img
             onClick={() => setModalShow(true)}
             className="product shadow"
             src={require("../assets/pictures".concat(item.image))}
             style={{ height: "100%", width: "100%", width: "12vw" }}
             alt={item.name}
-          />
-        </div>
+          /> */}
+        {/* </div> */}
         <div className="name-price">
           <p>{item.name}</p>
           <small>{item.price}₪</small>

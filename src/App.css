@@ -48,6 +48,7 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   /* height: 30vh; */
+  width: 13vw;
 }
 .name-price {
   display: flex;
@@ -59,11 +60,13 @@ p {
 .products-grid {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   /* max-width: 80vw; */
   height: fit-content;
   flex-wrap: wrap;
   max-width: 70vw;
+  align-items: flex-start;
+  column-gap: 2rem;
 }
 .TopBar {
   width: 100vw;
@@ -122,6 +125,7 @@ p {
   height: 2rem;
 }
 .quantity-picker {
+  user-select: none;
   background: #dff0ff;
   border-radius: 4px;
   width: 7rem;

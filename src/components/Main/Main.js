@@ -45,11 +45,22 @@ function Main({ monday, meta }) {
           </>
         ) : (
           <>
-            <Button onClick={() => dispatch(toMain())}>Main</Button>
-            {activeSection !== "checkout" && (
-              <Button onClick={() => dispatch(toCheckout())}>CheckOut</Button>
-            )}
-            <p>Total: {cart.total}₪</p>
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <Button
+                style={{ height: "fit-content" }}
+                onClick={() => dispatch(toMain())}
+              >
+                Main
+              </Button>
+              {activeSection !== "checkout" && (
+                <div>
+                  <Button onClick={() => dispatch(toCheckout())}>
+                    CheckOut
+                  </Button>
+                  <p>Total: {cart.total}₪</p>
+                </div>
+              )}
+            </div>
           </>
         )}
       </div>
