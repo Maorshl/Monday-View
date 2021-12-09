@@ -27,7 +27,7 @@ function Product({ name }) {
 
   return (
     <div className="category-container">
-      <p>{name}</p>
+      <h4>{name}</h4>
       <img
         onClick={() => navigateTo()}
         className="category-image"

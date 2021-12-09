@@ -7,7 +7,7 @@ export const slice = createSlice({
       products: [],
       total: 0,
     },
-    activeSection: "checkout",
+    activeSection: "main",
     user: {},
   },
   reducers: {

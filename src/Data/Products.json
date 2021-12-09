@@ -6,7 +6,7 @@
       "options": [
         {
           "name": "Milk",
-          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+          "options": ["Without", "Regular", "Soy", "Almonds", "Oats"]
         }
       ],
       "price": 9,
@@ -17,7 +17,7 @@
       "options": [
         {
           "name": "Milk",
-          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+          "options": ["Without", "Regular", "Soy", "Almonds", "Oats"]
         }
       ],
       "price": 10,
@@ -41,11 +41,11 @@
       "image": "/BigHot.png"
     },
     {
-      "name": "Cold Coffe",
+      "name": "Cold Coffee",
       "options": [
         {
           "name": "Milk",
-          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+          "options": ["Without", "Regular", "Soy", "Almonds", "Oats"]
         }
       ],
       "price": 12,
@@ -60,11 +60,11 @@
       "image": "/BigHot.png"
     },
     {
-      "name": "Short Esspreso",
+      "name": "Short Espresso",
       "options": [
         {
           "name": "Milk",
-          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+          "options": ["Without", "Regular", "Soy", "Almonds", "Oats"]
         }
       ],
       "price": 7,
@@ -75,29 +75,29 @@
       "options": [
         {
           "name": "Milk",
-          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+          "options": ["Without", "Regular", "Soy", "Almonds", "Oats"]
         }
       ],
       "price": 9,
       "image": "/Espresso.png"
     },
     {
-      "name": "Double Esspreso",
+      "name": "Double Espresso",
       "options": [
         {
           "name": "Milk",
-          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+          "options": ["Whiteout", "Regular", "Soy", "Almonds", "Oats"]
         }
       ],
       "price": 9,
       "image": "/Espresso.png"
     },
     {
-      "name": "Long Double Esspreso",
+      "name": "Long Double Espresso",
       "options": [
         {
           "name": "Milk",
-          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+          "options": ["Without", "Regular", "Soy", "Almonds", "Oats"]
         }
       ],
       "price": 9,
@@ -168,7 +168,7 @@
       "image": "/BigHot.png"
     },
     {
-      "name": "Hot Nutells Cocoa",
+      "name": "Hot Nutella Cocoa",
       "options": [
         { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
       ],
@@ -243,7 +243,7 @@
       "contain": "true"
     },
     {
-      "name": "Coffe + pastries",
+      "name": "Coffee + pastries",
       "options": [],
       "price": 9,
       "image": "/Croissant.png",
@@ -300,7 +300,7 @@
       "image": "/ChocolateCake.png"
     },
     {
-      "name": "Coffe + pastries",
+      "name": "Coffee + pastries",
       "options": [],
       "price": 9,
       "image": "/Croissant.png"
@@ -320,7 +320,7 @@
       "image": "/Sandwich.png"
     },
     {
-      "name": "Agg Sandwich",
+      "name": "Egg Sandwich",
       "options": [],
       "price": 19,
       "image": "/Sandwich.png"
@@ -338,7 +338,7 @@
       "image": "/Sandwich.png"
     },
     {
-      "name": "Goet Cheese Sandwich",
+      "name": "Goat Cheese Sandwich",
       "options": [],
       "price": 19,
       "image": "/Sandwich.png"
@@ -374,13 +374,13 @@
       "image": "/Sandwich.png"
     },
     {
-      "name": "Half Goet Cheese Sandwich",
+      "name": "Half Goat Cheese Sandwich",
       "options": [],
       "price": 14,
       "image": "/Sandwich.png"
     },
     {
-      "name": "Half Bresaola Sandwiche",
+      "name": "Half Bresaola Sandwich",
       "options": [],
       "price": 19,
       "image": "/Sandwich.png"

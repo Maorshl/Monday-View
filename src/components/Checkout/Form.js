@@ -14,6 +14,8 @@ function Form({
   location,
   phoneNumber,
   setDate,
+  date,
+  setJoinTo,
 }) {
   const cart = useSelector((state) => state.app.cart);
   return (
@@ -36,9 +38,9 @@ function Form({
           } else setLocation("");
         }}
       />
-      <Schedule setDate={setDate} />
+      <Schedule setDate={setDate} date={date} />
       <div className="checkout-form">
-        <PhoneNumber setPhoneNumber={setPhoneNumber} />
+        <PhoneNumber setJoinTo={setJoinTo} setPhoneNumber={setPhoneNumber} />
       </div>
       <div className="checkout-button">
         <div>Total: {cart.total}₪</div>

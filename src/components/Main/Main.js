@@ -28,7 +28,6 @@ function Main({ monday, meta }) {
           id
           }
       }`);
-    console.log(data.me);
     dispatch(setUser(data.me));
   }, []);
 
@@ -38,22 +37,45 @@ function Main({ monday, meta }) {
       <div className="hello-text">
         {activeSection === "main" ? (
           <>
-            <h4>Good Morning, {user.name}!</h4>
-            <p>What would you like to have?</p>
-            <p>Total: {cart.total}₪</p>
-            <Button onClick={() => dispatch(toCheckout())}>CheckOut</Button>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+              }}
+            >
+              <div>
+                <h4>Good Morning, {user.name}!</h4>
+                <p>What would you like to have?</p>
+              </div>
+              <div>
+                <Button
+                  style={{ alignSelf: "flex-end" }}
+                  onClick={() => dispatch(toCheckout())}
+                >
+                  Checkout
+                </Button>
+                <p>Total: {cart.total}₪</p>
+              </div>
+            </div>
           </>
         ) : (
           <>
-            <div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+              }}
+            >
               <div className="back-button" onClick={() => dispatch(toMain())}>
                 <img src={require("../../assets/pictures/MoveArrowLeft.png")} />
                 Main
               </div>
               {activeSection !== "checkout" && (
-                <div>
+                <div style={{ alignSelf: "flex-end" }}>
                   <Button onClick={() => dispatch(toCheckout())}>
-                    CheckOut
+                    Checkout
                   </Button>
                   <p>Total: {cart.total}₪</p>
                 </div>

@@ -14,9 +14,10 @@ function Checkout({ monday, meta }) {
   const cart = useSelector((state) => state.app.cart);
   const user = useSelector((state) => state.app.user);
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [joinTo, setJoinTo] = useState("");
   const [toastOpen, setToastOpen] = useState(false);
   const [location, setLocation] = useState("");
-  const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
+  const [date, setDate] = useState(new Date());
 
   const orderSummery = `
     ${cart.products.map((item) => {
@@ -37,8 +38,9 @@ function Checkout({ monday, meta }) {
       text: location,
       text7: orderSummery,
       status: { label: "In The Making" },
-      date4: { date: date },
+      date4: { date: date.toISOString().split("T")[0] },
       people: { personsAndTeams: [{ id: user.id, kind: "person" }] },
+      text30: joinTo,
     });
     const variables = {
       itemName: user.name,
@@ -57,12 +59,14 @@ function Checkout({ monday, meta }) {
     <div style={{ display: "flex", flexDirection: "column" }}>
       <p>{orderSummery}</p>
       <Form
+        setJoinTo={setJoinTo}
         setLocation={setLocation}
         setPhoneNumber={setPhoneNumber}
         checkout={checkout}
         location={location}
         phoneNumber={phoneNumber}
         setDate={setDate}
+        date={date}
       />
     </div>
   );

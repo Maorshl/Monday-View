@@ -21,6 +21,7 @@
     "monday-ui-react-core": "0.0.48",
     "react": "^16.13.0",
     "react-bootstrap": "^2.0.3",
+    "react-datepicker": "^4.5.0",
     "react-dom": "^16.13.0",
     "react-redux": "^7.2.6",
     "react-scripts": "3.4.0"
