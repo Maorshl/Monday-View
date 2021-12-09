@@ -197,7 +197,7 @@
       "name": "Water",
       "options": [],
       "price": 7,
-      "image": "/Water.png",
+      "image": "/Neviot.png",
       "contain": "true"
     },
     {
@@ -208,24 +208,24 @@
       "contain": "true"
     },
     {
-      "name": "Cola Ziro",
+      "name": "Cola Zero",
       "options": [],
       "price": 7,
-      "image": "/Cola.png",
+      "image": "/ColaZero.png",
       "contain": "true"
     },
     {
       "name": "Sprite",
       "options": [],
       "price": 7,
-      "image": "/Cola.png",
+      "image": "/Sprite.png",
       "contain": "true"
     },
     {
-      "name": "Sprite Ziro",
+      "name": "Sprite Zero",
       "options": [],
       "price": 7,
-      "image": "/Cola.png",
+      "image": "/SpriteZero.png",
       "contain": "true"
     },
     {

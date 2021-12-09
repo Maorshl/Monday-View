@@ -64,7 +64,7 @@ p {
   /* max-width: 80vw; */
   height: fit-content;
   flex-wrap: wrap;
-  max-width: 70vw;
+  max-width: 100vw;
   align-items: flex-start;
   column-gap: 2rem;
 }
@@ -76,7 +76,9 @@ p {
   margin-bottom: 10%;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh; /* Position the navbar at the top of the page */
+}
+.topbar-image {
+  padding-top: 15vh; /* Position the navbar at the top of the page */
 }
 .main-container {
   width: 70%;
@@ -137,5 +139,23 @@ p {
   color: #0085ff;
 }
 .plus-minus {
+  cursor: pointer;
+}
+.checkout-form {
+  width: 21%;
+  margin-top: 5vh;
+}
+.checkout-button {
+  width: 10vw;
+  align-self: flex-end;
+}
+.back-button {
+  height: fit-content;
+  display: flex;
+  width: 7vw;
+  justify-content: space-around;
+}
+.back-button:hover {
+  text-decoration: underline;
   cursor: pointer;
 }

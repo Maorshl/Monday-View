@@ -6,12 +6,13 @@ import TextField from "monday-ui-react-core/dist/TextField";
 import { useSelector, useDispatch } from "react-redux";
 import { toFinish } from "../../redux/appSlice";
 import CartProduct from "./CartProduct";
+import PhoneNumber from "./PhoneNumber";
 
 function Checkout({ monday, meta }) {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.app.cart);
   const user = useSelector((state) => state.app.user);
-  const [phoneNumber, setPhoneNumber] = useState(user.mobile_Phone);
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [toastOpen, setToastOpen] = useState(false);
   const [location, setLocation] = useState("");
 
@@ -21,7 +22,6 @@ function Checkout({ monday, meta }) {
         (item) => item.name + ": " + item.option
       )})`;
     })}
-    Total: ${cart.total}
   `;
 
   const checkout = async () => {
@@ -53,41 +53,38 @@ function Checkout({ monday, meta }) {
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      {/* <Toast
-        open={toastOpen}
-        autoHideDuration={3000}
-        onClose={() => setToastOpen(false)}
-      /> */}
       <p>{orderSummery}</p>
       <label>Location</label>
       <Dropdown
         className="rooms-dropdown"
         size={Dropdown.size.MEDIUM}
-        options={[{ label: "Room#9" }, { label: "Room#7" }]}
+        options={[
+          { label: "Room#9" },
+          { label: "Room#7" },
+          { label: "Sella Ronda" },
+          { label: "Val Torens" },
+          { label: "Aspen" },
+        ]}
         onChange={(event) => {
           if (event) {
             setLocation(event.label);
           } else setLocation("");
         }}
       />
-      {!user.mobile_Phone && (
-        <>
-          <label>Phone Number</label>
-          <TextField
-            className="rooms-dropdown"
-            onChange={(event) => setPhoneNumber(event)}
-          ></TextField>
-        </>
-      )}
-      <div>
-        Total: {cart.total} {phoneNumber}
+      <div className="checkout-form">
+        <PhoneNumber setPhoneNumber={setPhoneNumber} />
       </div>
-      <Button
-        onClick={checkout}
-        disabled={!(phoneNumber && location && cart.products.length)}
-      >
-        Checkout
-      </Button>
+      <div className="checkout-button">
+        <div>Total: {cart.total}₪</div>
+        <Button
+          onClick={checkout}
+          disabled={
+            !(phoneNumber.length === 10 && location && cart.products.length)
+          }
+        >
+          Checkout
+        </Button>
+      </div>
     </div>
   );
 }

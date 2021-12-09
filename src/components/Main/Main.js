@@ -45,13 +45,11 @@ function Main({ monday, meta }) {
           </>
         ) : (
           <>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <Button
-                style={{ height: "fit-content" }}
-                onClick={() => dispatch(toMain())}
-              >
+            <div>
+              <div className="back-button" onClick={() => dispatch(toMain())}>
+                <img src={require("../../assets/pictures/MoveArrowLeft.png")} />
                 Main
-              </Button>
+              </div>
               {activeSection !== "checkout" && (
                 <div>
                   <Button onClick={() => dispatch(toCheckout())}>
@@ -72,7 +70,12 @@ function Main({ monday, meta }) {
       {activeSection === "finish" && <Finish />}
       <img
         src={require("../../assets/pictures/MoveoLogo.png")}
-        style={{ width: "20%", alignSelf: "center", margin: "5rem" }}
+        style={{
+          width: "20%",
+          alignSelf: "center",
+          margin: "5rem",
+          paddingBottom: "10vh",
+        }}
       />
     </div>
   );
