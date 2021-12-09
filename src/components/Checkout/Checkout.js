@@ -2,16 +2,19 @@ import React, { useState, useEffect } from "react";
 import Button from "monday-ui-react-core/dist/Button";
 import Dropdown from "monday-ui-react-core/dist/Dropdown";
 import TextField from "monday-ui-react-core/dist/TextField";
-import { useSelector } from "react-redux";
+// import { Toast } from "monday-ui-react-core";
+import { useSelector, useDispatch } from "react-redux";
+import { toFinish } from "../../redux/appSlice";
 import CartProduct from "./CartProduct";
 
 function Checkout({ monday, meta }) {
+  const dispatch = useDispatch();
   const cart = useSelector((state) => state.app.cart);
   const user = useSelector((state) => state.app.user);
   const [phoneNumber, setPhoneNumber] = useState(user.mobile_Phone);
+  const [toastOpen, setToastOpen] = useState(false);
   const [location, setLocation] = useState("");
 
-  console.log(cart);
   const orderSummery = `
     ${cart.products.map((item) => {
       return ` ${item.name} X ${item.quantity} (${item.extra.map(
@@ -40,11 +43,21 @@ function Checkout({ monday, meta }) {
       boardId: meta.boardId,
       columnValues,
     };
-    return await monday.api(query, { variables });
+    const { data } = await monday.api(query, { variables });
+    if (data.create_item) {
+      dispatch(toFinish());
+    } else {
+      setToastOpen(true);
+    }
   };
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
+      {/* <Toast
+        open={toastOpen}
+        autoHideDuration={3000}
+        onClose={() => setToastOpen(false)}
+      /> */}
       <p>{orderSummery}</p>
       <label>Location</label>
       <Dropdown
@@ -57,10 +70,6 @@ function Checkout({ monday, meta }) {
           } else setLocation("");
         }}
       />
-      {/* <input
-        type="text"
-        onChange={(event) => setLocation(event.target.value)}
-      ></input> */}
       {!user.mobile_Phone && (
         <>
           <label>Phone Number</label>

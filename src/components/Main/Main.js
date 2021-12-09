@@ -11,6 +11,7 @@ import Sandwiches from "../Sandwiches/Sandwiches";
 import TopBar from "../Main/TopBar";
 import Checkout from "../Checkout/Checkout";
 import { toCheckout, setUser } from "../../redux/appSlice";
+import Finish from "../Checkout/Finish";
 
 function Main({ monday, meta }) {
   const dispatch = useDispatch();
@@ -56,6 +57,7 @@ function Main({ monday, meta }) {
       {activeSection === "pastries" && <Pastries />}
       {activeSection === "sandwiches" && <Sandwiches />}
       {activeSection === "checkout" && <Checkout monday={monday} meta={meta} />}
+      {activeSection === "finish" && <Finish monday={monday} meta={meta} />}
     </div>
   );
 }
