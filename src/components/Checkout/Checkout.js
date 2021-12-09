@@ -16,6 +16,7 @@ function Checkout({ monday, meta }) {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [toastOpen, setToastOpen] = useState(false);
   const [location, setLocation] = useState("");
+  const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
 
   const orderSummery = `
     ${cart.products.map((item) => {
@@ -36,7 +37,7 @@ function Checkout({ monday, meta }) {
       text: location,
       text7: orderSummery,
       status: { label: "In The Making" },
-      date4: { date: new Date().toISOString().split("T")[0] },
+      date4: { date: date },
       people: { personsAndTeams: [{ id: user.id, kind: "person" }] },
     });
     const variables = {
@@ -61,6 +62,7 @@ function Checkout({ monday, meta }) {
         checkout={checkout}
         location={location}
         phoneNumber={phoneNumber}
+        setDate={setDate}
       />
     </div>
   );

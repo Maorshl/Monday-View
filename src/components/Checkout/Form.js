@@ -5,6 +5,7 @@ import TextField from "monday-ui-react-core/dist/TextField";
 import CartProduct from "./CartProduct";
 import PhoneNumber from "./PhoneNumber";
 import { useSelector } from "react-redux";
+import Schedule from "./Schedule";
 
 function Form({
   setLocation,
@@ -12,15 +13,17 @@ function Form({
   checkout,
   location,
   phoneNumber,
+  setDate,
 }) {
   const cart = useSelector((state) => state.app.cart);
   return (
     <>
-      <label>Location</label>
+      <h5>Location</h5>
       <Dropdown
         className="rooms-dropdown"
         size={Dropdown.size.MEDIUM}
         options={[
+          { label: "Take away" },
           { label: "Room#9" },
           { label: "Room#7" },
           { label: "Sella Ronda" },
@@ -33,6 +36,7 @@ function Form({
           } else setLocation("");
         }}
       />
+      <Schedule setDate={setDate} />
       <div className="checkout-form">
         <PhoneNumber setPhoneNumber={setPhoneNumber} />
       </div>

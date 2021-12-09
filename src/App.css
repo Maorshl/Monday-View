@@ -159,3 +159,10 @@ p {
   text-decoration: underline;
   cursor: pointer;
 }
+.schedule-radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30vw;
+  padding-top: 1vw;
+}

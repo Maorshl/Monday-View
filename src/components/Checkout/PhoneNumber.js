@@ -8,7 +8,12 @@ function PhoneNumber({ setPhoneNumber }) {
     <>
       {!user.mobile_Phone && (
         <>
-          <label>Phone Number</label>
+          <h5>Phone Number</h5>
+          <TextField
+            className="rooms-dropdown"
+            onChange={(event) => setPhoneNumber(event)}
+          ></TextField>
+          <h5 style={{ paddingTop: "5vh" }}>Join an Order</h5>
           <TextField
             className="rooms-dropdown"
             onChange={(event) => setPhoneNumber(event)}
