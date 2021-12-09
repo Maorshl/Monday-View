@@ -17,6 +17,7 @@ function Main({ monday, meta }) {
   const dispatch = useDispatch();
   const [name, setName] = useState("");
   const activeSection = useSelector((state) => state.app.activeSection);
+  const user = useSelector((state) => state.app.user);
   const cart = useSelector((state) => state.app.cart);
 
   useEffect(async () => {
@@ -37,7 +38,7 @@ function Main({ monday, meta }) {
       <div className="hello-text">
         {activeSection === "main" ? (
           <>
-            <h4>Good Morning, {name}!</h4>
+            <h4>Good Morning, {user.name}!</h4>
             <p>What would you like to have?</p>
             <p>Total: {cart.total}₪</p>
             <Button onClick={() => dispatch(toCheckout())}>CheckOut</Button>

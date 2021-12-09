@@ -18,28 +18,30 @@ function MyModal({ item, onHide, show, image }) {
     <Modal
       onHide={onHide}
       show={show}
-      size="lg"
+      size="md"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      className="modal"
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          <>
-            {item.name} <p>{item.price * quantity}₪</p>
-          </>
+          <>{item.name}</>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div>
-          <div className="modal-options">
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div
+            className="modal-options"
+            style={{ justifyContent: !item.options.length && "center" }}
+          >
             <Options options={item.options} setExtra={setExtra} />
             <img
               className="product shadow"
               src={image}
-              style={{ height: "20%", width: "20%" }}
+              style={{ height: "30%", width: "30%" }}
             />
           </div>
-          <div style={{ margin: "auto", width: "70%" }}>
+          <div style={{ margin: "auto", width: "70%", marginTop: "1rem" }}>
             <TextField
               id="_3"
               placeholder="Notes"
@@ -49,6 +51,9 @@ function MyModal({ item, onHide, show, image }) {
               }}
             />
           </div>
+          <p style={{ alignSelf: "flex-end", margin: "1rem" }}>
+            {item.price * quantity}₪
+          </p>
         </div>
       </Modal.Body>
       <Modal.Footer>

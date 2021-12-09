@@ -2,45 +2,244 @@
   "categories": ["Drinks", "Pastries", "Sandwiches"],
   "drinks": [
     {
-      "name": "Americano",
+      "name": "Small Americano",
       "options": [
-        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+        {
+          "name": "Milk",
+          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+        }
       ],
-      "price": 10,
-      "image": "../assets/pictures/Drinks.png"
+      "price": 9,
+      "image": "/Drinks.png"
     },
     {
-      "name": "Latte",
+      "name": "Big Americano",
       "options": [
-        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+        {
+          "name": "Milk",
+          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+        }
       ],
       "price": 10,
 
-      "image": "../assets/pictures/Drinks.png"
-    },
-    {
-      "name": "Tea",
-      "options": [
-        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
-      ],
-      "price": 8,
-      "image": "../assets/pictures/Drinks.png"
+      "image": "/Drinks.png"
     },
     {
       "name": "Small Cappuccino",
       "options": [
         { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
       ],
-      "price": 10,
-      "image": "SmallHot"
+      "price": 9,
+      "image": "/Drinks.png"
     },
     {
       "name": "Big Cappuccino",
       "options": [
         { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
       ],
+      "price": 11,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Cold Coffe",
+      "options": [
+        {
+          "name": "Milk",
+          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+        }
+      ],
+      "price": 12,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Cortado",
+      "options": [
+        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+      ],
+      "price": 7,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Short Esspreso",
+      "options": [
+        {
+          "name": "Milk",
+          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+        }
+      ],
+      "price": 7,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Long Espresso",
+      "options": [
+        {
+          "name": "Milk",
+          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+        }
+      ],
+      "price": 9,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Double Esspreso",
+      "options": [
+        {
+          "name": "Milk",
+          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+        }
+      ],
+      "price": 9,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Long Double Esspreso",
+      "options": [
+        {
+          "name": "Milk",
+          "options": ["Whithout", "Regular", "Soy", "Almonds", "Oats"]
+        }
+      ],
+      "price": 9,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Short Macchiato",
+      "options": [
+        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+      ],
+      "price": 7,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Long Macchiato",
+      "options": [
+        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+      ],
+      "price": 7,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Double Macchiato",
+      "options": [
+        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+      ],
+      "price": 9,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Tea",
+      "options": [],
+      "price": 8,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Sunny Breeze Tea",
+      "options": [],
+      "price": 12,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Mint Tea",
+      "options": [],
+      "price": 6,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Ginger Lemon Honey",
+      "options": [],
+      "price": 10,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Chai Masala",
+      "options": [
+        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+      ],
+      "price": 14,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Hot Cocoa",
+      "options": [
+        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+      ],
+      "price": 10,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Hot Nutells Cocoa",
+      "options": [
+        { "name": "Milk", "options": ["Regular", "Soy", "Almonds", "Oats"] }
+      ],
       "price": 13,
-      "image": "BigHot"
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Apple Cider",
+      "options": [],
+      "price": 13,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Small Ferrarelle",
+      "options": [],
+      "price": 7,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Large Ferrarelle",
+      "options": [],
+      "price": 14,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Water",
+      "options": [],
+      "price": 7,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Coca-Cola",
+      "options": [],
+      "price": 7,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Cola Ziro",
+      "options": [],
+      "price": 7,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Sprite",
+      "options": [],
+      "price": 7,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Sprite Ziro",
+      "options": [],
+      "price": 7,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Small Orange Juice",
+      "options": [],
+      "price": 13,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Large Orange Juice",
+      "options": [],
+      "price": 15,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Coffe + pastries",
+      "options": [],
+      "price": 9,
+      "image": "/Drinks.png"
     }
   ],
   "pastries": [
@@ -48,21 +247,135 @@
       "name": "croissant",
       "options": [],
       "price": 13,
-      "image": "../assets/pictures/Drinks.png"
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Chocolate croissant",
+      "options": [],
+      "price": 13,
+      "image": "/Drinks.png"
     },
     {
       "name": "Cinnamon roll",
       "options": [],
       "price": 13,
-      "image": "../assets/pictures/Drinks.png"
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Raspberry Brioche",
+      "options": [],
+      "price": 13,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Ricotta and Berris",
+      "options": [],
+      "price": 15,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Savory Cheese Pastry",
+      "options": [],
+      "price": 14,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Choclate Cake",
+      "options": [],
+      "price": 45,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Piece of Choclate Cake",
+      "options": [],
+      "price": 7,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Coffe + pastries",
+      "options": [],
+      "price": 9,
+      "image": "/Drinks.png"
     }
   ],
   "sandwiches": [
     {
-      "name": "Tuna",
+      "name": "Cheese Toast",
       "options": [],
       "price": 15,
-      "image": "../../"
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Tuna Sandwich",
+      "options": [],
+      "price": 19,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Agg Sandwich",
+      "options": [],
+      "price": 19,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Salmon Sandwich",
+      "options": [],
+      "price": 19,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Roasted Veggies Sandwich",
+      "options": [],
+      "price": 19,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Goet Cheese Sandwiche",
+      "options": [],
+      "price": 19,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Bresaola Sandwiche",
+      "options": [],
+      "price": 19,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Half Cheese Toast",
+      "options": [],
+      "price": 14,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Half Roasted Veggies Sandwich ",
+      "options": [],
+      "price": 14,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Half Salmon Sandwich ",
+      "options": [],
+      "price": 14,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Half Tuna Sandwich ",
+      "options": [],
+      "price": 14,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Half Goet Cheese Sandwich",
+      "options": [],
+      "price": 14,
+      "image": "/Drinks.png"
+    },
+    {
+      "name": "Half Bresaola Sandwiche",
+      "options": [],
+      "price": 19,
+      "image": "/Drinks.png"
     }
   ]
 }

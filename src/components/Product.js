@@ -14,8 +14,8 @@ function Product({ item }) {
           <img
             onClick={() => setModalShow(true)}
             className="product shadow"
-            src={image}
-            style={{ height: "100%", width: "100%", maxWidth: "10vw" }}
+            src={require("../assets/pictures".concat(item.image))}
+            style={{ height: "100%", width: "100%", width: "12vw" }}
             alt={item.name}
           />
         </div>

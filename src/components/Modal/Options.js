@@ -13,7 +13,6 @@ function Options({ options, setExtra }) {
                 <div
                   onMouseUp={() => {
                     setExtra((prevState) => [
-                      ...prevState,
                       { name: option.name, option: subOption },
                     ]);
                   }}
