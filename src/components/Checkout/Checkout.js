@@ -37,7 +37,7 @@ function Checkout({ monday, meta }) {
       text3: phoneNumber,
       text: location,
       text7: orderSummery,
-      status: { label: "In The Making" },
+      status: { label: "Approved" },
       date4: { date: date.toISOString().split("T")[0] },
       people: { personsAndTeams: [{ id: user.id, kind: "person" }] },
       text30: joinTo,

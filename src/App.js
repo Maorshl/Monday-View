@@ -28,22 +28,6 @@ export default function App() {
     });
   }, []);
 
-  // const addAnOrder = async () => {
-  //   const columnValues = JSON.stringify({ text: "Room Nisan" });
-  //   console.log(columnValues);
-  //   const variables = { columnValues };
-  //   const query = `mutation {
-  //     create_item(board_id: 1984654160, item_name: "Test testonovitch", column_values: "{\"text\" : \"eee\"}") {
-  //       id
-  //     }
-  //   }
-  //   `;
-
-  //   console.log("q", query, { variables });
-  //   const { data } = await monday.api(query);
-  //   console.log(data);
-  // };
-
   const test = async () => {
     const query = `mutation  ($itemName : String, $boardId : Int! , $columnValues  : JSON){
     create_item(item_name : $itemName,board_id : $boardId , column_values: $columnValues ,create_labels_if_missing: true) {
@@ -67,7 +51,6 @@ export default function App() {
     <Provider store={store}>
       <div className="App">
         <TopBar />
-        {/* <Button onClick={test}>Test</Button> */}
         <Main monday={monday} meta={meta} />
       </div>
     </Provider>
